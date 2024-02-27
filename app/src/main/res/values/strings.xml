@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Track my sleep</string>
     <string name="how_was_your_sleep">How was your sleep?</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="clear">Clear</string>
 </resources>

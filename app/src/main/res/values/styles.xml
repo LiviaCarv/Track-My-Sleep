@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Buttons" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="backgroundTint">@color/green_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>
