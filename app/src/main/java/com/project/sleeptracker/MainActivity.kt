@@ -1,8 +1,7 @@
-package com.project.trackmysleep
+package com.project.sleeptracker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.project.sleeptracker.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

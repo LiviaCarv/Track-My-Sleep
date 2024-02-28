@@ -45,7 +45,7 @@ dependencies {
 
     // Room and Lifecycle dependencies
     implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-compiler:2.6.1:")
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
 
     // Kotlin Extensions and Coroutines support for Room
@@ -59,8 +59,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 
     // Navigation
-    implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0")
-    implementation("android.arch.navigation:navigation-ui-ktx:1.0.0")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

@@ -1,4 +1,4 @@
-package com.project.trackmysleep
+package com.project.sleeptracker
 
 import org.junit.Test
 

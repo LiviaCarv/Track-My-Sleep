@@ -1,6 +1,5 @@
-package com.project.trackmysleep.sleepquality
+package com.project.sleeptracker.sleepquality
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

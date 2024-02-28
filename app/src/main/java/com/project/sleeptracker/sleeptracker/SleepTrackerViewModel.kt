@@ -1,4 +1,4 @@
-package com.project.trackmysleep.sleeptracker
+package com.project.sleeptracker.sleeptracker
 
 import androidx.lifecycle.ViewModel
 
