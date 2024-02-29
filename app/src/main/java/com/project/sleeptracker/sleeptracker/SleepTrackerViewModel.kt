@@ -1,7 +1,8 @@
 package com.project.sleeptracker.sleeptracker
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 
-class SleepTrackerViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+import com.project.sleeptracker.database.SleepDatabaseDao
+
+class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Application) : AndroidViewModel(application) {}

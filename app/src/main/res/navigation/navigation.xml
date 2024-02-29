@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/sleepTrackerFragment2">
+    app:startDestination="@id/sleepTrackerFragment">
     <fragment
-        android:id="@+id/sleepTrackerFragment2"
+        android:id="@+id/sleepTrackerFragment"
         android:name="com.project.sleeptracker.sleeptracker.SleepTrackerFragment"
         android:label="fragment_sleep_tracker"
         tools:layout="@layout/fragment_sleep_tracker" >
@@ -23,6 +23,6 @@
             app:argType="long" />
         <action
             android:id="@+id/action_sleepQualityFragment_to_sleepTrackerFragment2"
-            app:destination="@id/sleepTrackerFragment2" />
+            app:destination="@id/sleepTrackerFragment" />
     </fragment>
 </navigation>
