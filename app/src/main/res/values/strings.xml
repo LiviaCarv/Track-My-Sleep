@@ -22,4 +22,6 @@
     <string name="quality"><![CDATA[<b>Quality:</b>]]></string>
     <string name="hours_slept"><![CDATA[<b>Hours:Minutes:Seconds</b>]]></string>
 
+    <string name="cleared_message">All data removed.</string>
+
 </resources>
