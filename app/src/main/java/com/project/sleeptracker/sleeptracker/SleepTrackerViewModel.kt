@@ -1,6 +1,7 @@
 package com.project.sleeptracker.sleeptracker
 
 import android.app.Application
+import android.view.animation.Transformation
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -38,6 +39,19 @@ class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Applica
 
     val nightsString = nights.map { nights ->
         formatNights(nights, application.resources)
+    }
+
+    val startButtonVisible = tonight.map {
+        null == it
+    }
+
+
+    val stopButtonVisible = tonight.map {
+        null != it
+    }
+
+    val clearButtonVisible = nights.map {
+        it.isNotEmpty()
     }
 
     init {

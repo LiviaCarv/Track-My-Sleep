@@ -2,9 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.project.sleeptracker.sleeptracker.SleepTrackerFragment">
+    tools:context="com.project.sleeptracker.sleeptracker.SleepTrackerFragment"
+    >
 
     <data>
+
         <variable
             name="sleepTrackerViewModel"
             type="com.project.sleeptracker.sleeptracker.SleepTrackerViewModel" />
@@ -21,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
+            android:enabled="@{sleepTrackerViewModel.startButtonVisible}"
             android:onClick="@{() ->  sleepTrackerViewModel.onStartTracking()}"
             android:text="@string/start"
             app:layout_constraintEnd_toStartOf="@+id/btn_stop"
@@ -32,6 +35,7 @@
             style="@style/Buttons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:enabled="@{sleepTrackerViewModel.stopButtonVisible}"
             android:onClick="@{() ->  sleepTrackerViewModel.onStopTracking()}"
             android:text="@string/stop"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
+            android:enabled="@{sleepTrackerViewModel.clearButtonVisible}"
             android:onClick="@{() ->  sleepTrackerViewModel.onClear()}"
             android:text="@string/clear"
             app:layout_constraintBottom_toBottomOf="parent"
