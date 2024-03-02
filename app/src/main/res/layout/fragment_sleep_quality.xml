@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.project.sleeptracker.sleepquality.SleepQualityFragment">
 
+        <data>
+                <variable
+                    name="sleepQualityViewModel"
+                    type="com.project.sleeptracker.sleepquality.SleepQualityViewModel" />
+        </data>
+
 
 <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,6 +33,7 @@
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
             android:src="@drawable/ic_sleep_0"
+            android:onClick="@{() ->  sleepQualityViewModel.onSleepQuality(0)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/img_quality_one"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +43,7 @@
             android:id="@+id/img_quality_one"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
+            android:onClick="@{() ->  sleepQualityViewModel.onSleepQuality(1)}"
             android:src="@drawable/ic_sleep_1"
             app:layout_constraintEnd_toStartOf="@+id/img_quality_two"
             app:layout_constraintStart_toEndOf="@+id/img_quality_zero"
@@ -45,6 +53,7 @@
             android:id="@+id/img_quality_two"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
+            android:onClick="@{() ->  sleepQualityViewModel.onSleepQuality(2)}"
             android:src="@drawable/ic_sleep_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_quality_one"
@@ -55,6 +64,7 @@
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
             android:layout_marginTop="@dimen/default_margin"
+            android:onClick="@{() ->  sleepQualityViewModel.onSleepQuality(3)}"
             android:src="@drawable/ic_sleep_3"
             app:layout_constraintEnd_toStartOf="@+id/img_quality_four"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,6 +74,7 @@
             android:id="@+id/img_quality_four"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
+            android:onClick="@{() ->  sleepQualityViewModel.onSleepQuality(4)}"
             android:src="@drawable/ic_sleep_4"
             app:layout_constraintEnd_toStartOf="@+id/img_quality_five"
             app:layout_constraintStart_toEndOf="@+id/img_quality_three"
@@ -73,6 +84,7 @@
             android:id="@+id/img_quality_five"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
+            android:onClick="@{() ->  sleepQualityViewModel.onSleepQuality(5)}"
             android:src="@drawable/ic_sleep_5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_quality_four"
