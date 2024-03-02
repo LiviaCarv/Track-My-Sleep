@@ -10,7 +10,7 @@
         android:label="fragment_sleep_tracker"
         tools:layout="@layout/fragment_sleep_tracker" >
         <action
-            android:id="@+id/action_sleepTrackerFragment2_to_sleepQualityFragment"
+            android:id="@+id/action_sleepTrackerFragment_to_sleepQualityFragment"
             app:destination="@id/sleepQualityFragment" />
     </fragment>
     <fragment
@@ -22,7 +22,7 @@
             android:name="sleepNightKey"
             app:argType="long" />
         <action
-            android:id="@+id/action_sleepQualityFragment_to_sleepTrackerFragment2"
+            android:id="@+id/action_sleepQualityFragment_to_sleepTrackerFragment"
             app:destination="@id/sleepTrackerFragment" />
     </fragment>
 </navigation>
