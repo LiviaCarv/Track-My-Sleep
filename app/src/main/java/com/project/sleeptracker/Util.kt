@@ -5,7 +5,9 @@ import android.content.res.Resources
 import android.os.Build
 import android.text.Html
 import android.text.Spanned
+import android.widget.TextView
 import androidx.core.text.HtmlCompat
+import androidx.recyclerview.widget.RecyclerView
 import com.project.sleeptracker.database.SleepNight
 import java.text.SimpleDateFormat
 
@@ -21,6 +23,8 @@ fun convertNumericQualityToString(quality: Int, resources: Resources): String {
     }
     return qualityString
 }
+
+class TextItemViewHolder(val textView: TextView): RecyclerView.ViewHolder(textView)
 
 @SuppressLint("SimpleDateFormat")
 fun convertLongToDateString(systemTime: Long): String {
