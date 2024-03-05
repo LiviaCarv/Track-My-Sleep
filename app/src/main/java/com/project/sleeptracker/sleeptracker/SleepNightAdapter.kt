@@ -5,9 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.project.sleeptracker.R
-import com.project.sleeptracker.convertDurationToFormatted
-import com.project.sleeptracker.convertNumericQualityToString
 import com.project.sleeptracker.database.SleepNight
 import com.project.sleeptracker.databinding.ListItemSleepNightBinding
 
@@ -39,24 +36,9 @@ class SleepNightAdapter : ListAdapter<SleepNight, SleepNightAdapter.ViewHolder>(
         }
 
         // we moved the details of how to update the views into the ViewHolder which has the views.
-        fun bind(
-            item: SleepNight
-        ) {
-            val res = itemView.context.resources
-            binding.sleepLength.text =
-                convertDurationToFormatted(item.startTimeMilli, item.endTimeMilli, res)
-            binding.qualityString.text = convertNumericQualityToString(item.sleepQuality, res)
-            binding.qualityImage.setImageResource(
-                when (item.sleepQuality) {
-                    0 -> R.drawable.ic_sleep_0
-                    1 -> R.drawable.ic_sleep_1
-                    2 -> R.drawable.ic_sleep_2
-                    3 -> R.drawable.ic_sleep_3
-                    4 -> R.drawable.ic_sleep_4
-                    5 -> R.drawable.ic_sleep_5
-                    else -> R.drawable.ic_launcher_foreground
-                }
-            )
+        fun bind(item: SleepNight) {
+            binding.sleep = item
+            binding.executePendingBindings()
         }
     }
 }
