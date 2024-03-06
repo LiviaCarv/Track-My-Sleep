@@ -50,8 +50,7 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_clear"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_stop"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+            app:layout_constraintTop_toBottomOf="@+id/btn_stop">
         </androidx.recyclerview.widget.RecyclerView>
 
         <Button
