@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_sleepTrackerFragment_to_sleepQualityFragment"
             app:destination="@id/sleepQualityFragment" />
+        <action
+            android:id="@+id/action_sleepTrackerFragment_to_sleepDetail"
+            app:destination="@id/sleepDetail" />
     </fragment>
     <fragment
         android:id="@+id/sleepQualityFragment"
@@ -23,6 +26,18 @@
             app:argType="long" />
         <action
             android:id="@+id/action_sleepQualityFragment_to_sleepTrackerFragment"
+            app:destination="@id/sleepTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sleepDetail"
+        android:name="com.project.sleeptracker.sleepdetail.SleepDetailFragment"
+        android:label="SleepDetail"
+        tools:layout="@layout/fragment_sleep_detail" >
+        <argument
+            android:name="night"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_sleepDetail_to_sleepTrackerFragment"
             app:destination="@id/sleepTrackerFragment" />
     </fragment>
 </navigation>
