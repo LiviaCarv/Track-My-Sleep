@@ -58,7 +58,7 @@
             android:layout_marginBottom="32dp"
             android:onClick="@{() -> sleepDetailViewModel.onClose()}"
             style="@style/Buttons"
-            android:text="Close"
+            android:text="@string/close"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
